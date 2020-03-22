@@ -6,19 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bk3"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.laksh_pc.voteapp.navhome">
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Proceed"
-        android:onClick="openlist"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="388dp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
+    tools:context="com.example.laksh_pc.voteapp.Navhome">
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
@@ -29,9 +17,7 @@
         android:text="Welcome!"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@android:color/black"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="16dp" />
-
+         />
     <TextView
         android:id="@+id/dtext"
         android:layout_width="360dp"
@@ -42,9 +28,8 @@
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@android:color/black"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="70dp"
         tools:text="Email" />
+
 
     <ImageView
         android:id="@+id/imageView7"
@@ -54,6 +39,24 @@
         android:layout_alignTop="@+id/textView8"
         android:layout_alignParentStart="true"
         android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="openlist"
+         />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nominate"
+        android:onClick="clickNominate"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button4"
+        />
 
     <Button
         android:id="@+id/button8"

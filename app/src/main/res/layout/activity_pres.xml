@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back6"
-    tools:context="com.example.laksh_pc.voteapp.pres">
+    tools:context="com.example.laksh_pc.voteapp.Pres">
 
     <ImageView
         android:id="@+id/imageView3"

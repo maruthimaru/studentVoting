@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:minHeight="@dimen/size_100dp"
+        android:minWidth="@dimen/size_100dp"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:src="@drawable/user"/>
+
+    <ImageView
+        android:id="@+id/addImage"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_toRightOf="@id/userImage"
+        android:src="@drawable/add"
+        android:layout_marginTop="@dimen/size40dp"
+        android:layout_marginLeft="@dimen/size40dp"
+        android:layout_below="@id/userImage"
+        />
+
+    <EditText
+        android:id="@+id/UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_black"
+        android:minHeight="50dp"
+        android:hint="Name"
+        android:singleLine="true"
+        android:inputType="text"
+        android:layout_below="@id/userImage"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="14dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/mobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_black"
+        android:minHeight="50dp"
+        android:hint="Mobile Number"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textSize="14dp"
+        android:layout_below="@id/UserName"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/gmobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_black"
+        android:minHeight="50dp"
+        android:hint="Gardian Mobile Number"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        android:textSize="14dp"
+        android:layout_below="@id/mobileNo"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileNo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:entries="@array/type"/>
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_black"
+        android:minHeight="50dp"
+        android:hint="Age"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textSize="14dp"
+        android:layout_below="@id/spinnerType"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:layout_below="@id/age"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_right_arrow" />
+
+</RelativeLayout>

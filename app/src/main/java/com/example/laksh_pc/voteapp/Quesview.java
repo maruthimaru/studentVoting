@@ -13,7 +13,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class quesview extends AppCompatActivity {
+public class Quesview extends AppCompatActivity {
 
     private DatabaseReference mdatabase;
     private DatabaseReference mdatabase1;
@@ -76,7 +76,7 @@ public class quesview extends AppCompatActivity {
 
     }
     public void back(View view){
-        Intent backopen = new Intent(this,question.class);
+        Intent backopen = new Intent(this,Question.class);
         startActivity(backopen);
     }
 }

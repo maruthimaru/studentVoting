@@ -20,7 +20,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.laksh_pc.voteapp.R;
-import com.example.laksh_pc.voteapp.votes;
+import com.example.laksh_pc.voteapp.VoteCountFragment;
+import com.example.laksh_pc.voteapp.Votes;
 
 @RequiresApi(api = Build.VERSION_CODES.M)
 public class FingerprintAuthenticationHandler extends FingerprintManager.AuthenticationCallback {
@@ -77,7 +78,7 @@ public class FingerprintAuthenticationHandler extends FingerprintManager.Authent
         if(success){
 //            dbHelper.updatestudentDaily(dbHelper.getSpcName(DBHelper.dbLogin,DBHelper.userId),commonMethod.date(),"P",commonMethod.date()+" " +commonMethod.timeHH());
             textView.setTextColor(ContextCompat.getColor(context, R.color.colorPrimaryDark));
-            Intent i = new Intent(context, votes.class);
+            Intent i = new Intent(context, VoteCountFragment.class);
             context.startActivity(i);
             ((Activity) context).finish();
         }

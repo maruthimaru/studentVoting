@@ -19,7 +19,7 @@ import com.google.firebase.storage.UploadTask;
 
 import java.io.IOException;
 
-public class profile extends AppCompatActivity implements View.OnClickListener{
+public class Profile extends AppCompatActivity implements View.OnClickListener{
 
 
     private static final int PICK_IMAGE_REQUEST =234;
@@ -56,7 +56,7 @@ public class profile extends AppCompatActivity implements View.OnClickListener{
     private void uploadfile(){
         if(filepath != null) {
 
-            StorageReference riversRef = storageReference.child("images/profile.jpg");
+            StorageReference riversRef = storageReference.child("images/Profile.jpg");
 
             riversRef.putFile(filepath)
                     .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {

@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class pres extends AppCompatActivity {
+public class Pres extends AppCompatActivity {
 
     TextView finalresult;
     FirebaseDatabase firebaseDatabase;
@@ -67,7 +67,7 @@ public class pres extends AppCompatActivity {
             databaseReference.child("Voted").child(email).setValue(email);
             databaseReference.child("Hari").child(email).setValue(email);
         }
-        Intent startnew = new Intent(this,gov.class);
+        Intent startnew = new Intent(this,Gov.class);
         startActivity(startnew);
     }
 }

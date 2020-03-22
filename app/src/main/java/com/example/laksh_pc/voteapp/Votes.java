@@ -10,7 +10,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class votes extends AppCompatActivity {
+public class Votes extends AppCompatActivity {
 
     private DatabaseReference mdata1;
     private DatabaseReference mdata2;

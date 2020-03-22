@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class question extends AppCompatActivity {
+public class Question extends AppCompatActivity {
 
     TextView question;
     TextView option1;
@@ -33,7 +33,7 @@ public class question extends AppCompatActivity {
 
     }
     public void openview(View view){
-        Intent startview = new Intent(this,quesview.class);
+        Intent startview = new Intent(this,Quesview.class);
         startActivity(startview);
     }
 }

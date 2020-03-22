@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bk10"
-    tools:context="com.example.laksh_pc.voteapp.success">
+    tools:context="com.example.laksh_pc.voteapp.Success">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -35,6 +35,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
         android:onClick="sendhome"
+        android:visibility="gone"
         android:text="VoteList" />
 
     <Button
@@ -44,6 +45,7 @@
         android:layout_alignStart="@+id/button3"
         android:layout_below="@+id/button3"
         android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:onClick="exitbtn"
         android:text="Exit" />
 </android.widget.RelativeLayout>

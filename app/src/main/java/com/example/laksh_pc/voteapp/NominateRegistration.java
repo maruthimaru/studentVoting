@@ -1,20 +1,21 @@
 package com.example.laksh_pc.voteapp;
 
 import android.content.Intent;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class registration extends AppCompatActivity {
+public class NominateRegistration extends AppCompatActivity {
 
     private EditText txtemailaddr;
     private EditText txtpwd;
@@ -33,13 +34,13 @@ public class registration extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
-                    Toast.makeText(registration.this, "Registration Successful", Toast.LENGTH_LONG).show();
-                    Intent i = new Intent(registration.this, authenticate.class);
+                    Toast.makeText(NominateRegistration.this, "Registration Successful", Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(NominateRegistration.this, Authenticate.class);
                     startActivity(i);
 
                 } else {
                     Log.e("Error", task.getException().toString());
-                    Toast.makeText(registration.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(NominateRegistration.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
 
                 }
             }

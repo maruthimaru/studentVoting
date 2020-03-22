@@ -8,4 +8,8 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_mainactivity">mainactivity</string>
+    <string-array name="type">
+        <item>Chairman</item>
+        <item>Vise chairman</item>
+    </string-array>
 </resources>
